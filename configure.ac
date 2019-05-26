@@ -15,6 +15,9 @@ AC_CANONICAL_HOST
 
 AM_INIT_AUTOMAKE([1.9 -Wall -Werror no-define])
 
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19])
+
 AC_DEFINE([PACKAGE_RELEASE_DATE],
 	  ["March 21th, 2014"], [Date of source release.])
 
@@ -36,6 +39,8 @@ AC_ARG_ENABLE([desktop],
 AC_ARG_ENABLE([menu],
   [AS_HELP_STRING([--enable-menu],
     [install menu file on desktop systems])])
+
+PKG_PROG_PKG_CONFIG
 
 AM_CONDITIONAL([ENABLE_DESKTOP], [test "$enable_desktop" = yes])
 AM_CONDITIONAL([ENABLE_MENU], [test "$enable_menu" = yes])
@@ -64,6 +69,7 @@ AC_CHECK_HEADERS(       \
 	ncurses/ncurses.h	\
 	ncurses/term.h	\
 	termcap.h	\
+	glib/gi18n.h \
 )
 
 dnl OpenSolaris complains if <term.h> is not
@@ -113,6 +119,10 @@ AC_CHECK_LIB([ncurses], [setupterm], [LIBNCURSES=-lncurses],
    LDFLAGS=$saved_LDFLAGS
    LIBS=$saved_LIBS]dnl
 )
+
+PKG_CHECK_MODULES([nettoe], [glib-2.0])
+
+AC_CHECK_LIB([glib], [glib/gi18n])
 AC_CHECK_LIB([curses], [setupterm], [LIBCURSES=-lcurses])
 AC_CHECK_LIB([termcap], [tgetent], [LIBTERMCAP=-ltermcap])
 AC_SUBST(LIBTINFO)
@@ -198,8 +208,7 @@ AC_ARG_VAR([iconsdir], [base directory for icons [$(datadir)/icons]])
 AC_ARG_VAR([menudir], [location of menu descriptions [$(datadir)/menu]])
 AC_ARG_VAR([pixmapsdir], [location of pixmaps [$(datadir)/pixmaps]])
 
-AC_CONFIG_FILES([Makefile docs/Makefile src/Makefile test/Makefile
-		 desktop/Makefile])
+AC_CONFIG_FILES([Makefile docs/Makefile src/Makefile test/Makefile desktop/Makefile po/Makefile.in])
 
 AC_OUTPUT
 

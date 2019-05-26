@@ -36,6 +36,7 @@
 #include <netdb.h>
 #include <signal.h>
 #include <time.h>
+#include <glib/gi18n.h>
 
 #include "terminal.h"
 /* New Code for the nettoe board matrix, not used yet.
@@ -108,6 +109,10 @@ static void reset_color (int sig)
 
 int main (int argc, char *argv[])
 {
+
+  setlocale(LC_ALL, "");
+  bindtextdomain ("nettoe", LOCALEDIR);
+  textdomain("nettoe");
 
   NO_BEEP   = 0; /* beeps are enabled by default */
                  /* --no-beep disable beeps      */

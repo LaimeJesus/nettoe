@@ -28,6 +28,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <time.h>
+#include <glib/gi18n.h>
 
 /* Macros AF_* for address families. */
 #ifdef HAVE_SYS_TYPES_H
@@ -122,31 +123,47 @@ int check_pname(const char *pname, size_t maxlen)
 void print_infos_screen (void)
 {
 	nettoe_term_reset_color();
-	printf(" netToe is a Tic Tac Toe-like game for Linux and UNIX.    \n");
-	printf(" It is possible to play it against the computer, another  \n");
-	printf(" player on the same PC, or against another player over    \n");
-	printf(" a network (Internet, and everything using TCP/IP).       \n");
-	printf(" To play it over a network you must first set up a server.\n");
-	printf(" This is done in the network game options menu, selecting \n");
-	printf(" \"Host the game\". Then the (remote) second player must  \n");
-	printf(" connect to the server by typing its IP address, or name. \n");
-	printf(" That should be enough for you to have some leisure.      \n");
-	printf(" For a detailed guide on HOW TO PLAY, and for other info, \n");
-	printf(" do read the manual page ");
+	printf(_(" netToe is a Tic Tac Toe-like game for Linux and UNIX.    "));
+	printf("\n");
+	printf(_(" It is possible to play it against the computer, another  "));
+	printf("\n");
+	printf(_(" player on the same PC, or against another player over    "));
+	printf("\n");
+	printf(_(" a network (Internet, and everything using TCP/IP).       "));
+	printf("\n");
+	printf(_(" To play it over a network you must first set up a server."));
+	printf("\n");
+	printf(_(" This is done in the network game options menu, selecting "));
+	printf("\n");
+	printf(" \"");
+	printf(_("Host the game"));
+	printf("\".");
+	printf(_(" Then the (remote) second player must  "));
+	printf("\n");
+	printf(_(" connect to the server by typing its IP address, or name. "));
+	printf("\n");
+	printf(_(" That should be enough for you to have some leisure.      "));
+	printf("\n");
+	printf(_(" For a detailed guide on HOW TO PLAY, and for other info, "));
+	printf("\n");
+	printf(_(" do read the manual page "));
 	nettoe_term_set_color (COLOR_BLUE, ATTRIB_BRIGHT);
 	printf("nettoe");
 	nettoe_term_reset_color();
 	printf("(6).\n\n");
 
 	printf(" netToe %s (%s)\n", PACKAGE_VERSION, PACKAGE_RELEASE_DATE);
-	printf(" Copyright 2000,2001 Gabriele Giorgetti\n");
-	printf("           2009-2014 Mats Erik Andersson\n");
+	printf(_(" Copyright 2000,2001 Gabriele Giorgetti"));
+	printf("\n");
+	printf(_("           2009-2014 Mats Erik Andersson"));
+	printf("\n");
 	printf(" %s\n", HOMEPAGE);
-	printf("\n Press");
+	printf("\n");
+	printf(_(" Press"));
 	nettoe_term_set_color (COLOR_RED, ATTRIB_BRIGHT);
-	printf(" enter");
+	printf(_(" enter"));
 	nettoe_term_reset_color();
-	printf(" to go back to the main menu. ");
+	printf(_(" to go back to the main menu. "));
 	 
 	fflush (stdin);
 	getchar ();
@@ -168,24 +185,28 @@ void parse_cmd_args(int argc, char *argv[])
 	{
 		if ( (!strcmp(argv[i], "-h")) || (!strcmp(argv[i], "--help")) )
 		{
-			fprintf(stdout, "netToe %s the enhanced, and networked, "
-					"Tic Tac Toe game.\n", PACKAGE_VERSION);
+			fprintf(stdout, _("netToe %s the enhanced, and networked, Tic Tac Toe game."), PACKAGE_VERSION);
+			fprintf(stdout, "\n\n");
+			fprintf(stdout, _("Usage:  nettoe [OPTIONS]"));
+			fprintf(stdout, "\n\n");
+			fprintf(stdout, _("-4,  --ipv4        only IPv4 networking"));
 			fprintf(stdout, "\n");
-			fprintf(stdout, "Usage:  nettoe [OPTIONS]\n");
+			fprintf(stdout, _("-6,  --ipv6        only IPv6 networking"));
 			fprintf(stdout, "\n");
-			fprintf(stdout, "-4,  --ipv4        only IPv4 networking\n");
-			fprintf(stdout, "-6,  --ipv6        only IPv6 networking\n");
-			fprintf(stdout, "-nb, --no-beep     disable beeps\n");
-			fprintf(stdout, "-nc, --no-colors   disable colors\n");
-			fprintf(stdout, "-h,  --help        display this help,"
-						    " then exit\n");
-			fprintf(stdout, "-v,  --version     output version information,"
-							" then exit\n");
+			fprintf(stdout, _("-nb, --no-beep     disable beeps"));
 			fprintf(stdout, "\n");
-			fprintf(stdout, "The netToe project can be found at: \n");
+			fprintf(stdout, _("-nc, --no-colors   disable colors"));
+			fprintf(stdout, "\n");
+			fprintf(stdout, _("-h,  --help        display this help, then exit"));
+			fprintf(stdout, "\n");
+			fprintf(stdout, _("-v,  --version     output version information, then exit"));
+			fprintf(stdout, "\n\n");
+			fprintf(stdout, _("The netToe project can be found at: "));
+			fprintf(stdout, "\n");
 			fprintf(stdout, "  %s\n", HOMEPAGE);
 			fprintf(stdout, "\n");
-			fprintf(stdout, "Please send any bug reports, or comments to:\n");
+			fprintf(stdout, _("Please send any bug reports, or comments to:"));
+			fprintf(stdout, "\n");
 			fprintf(stdout, "  %s\n", AUTHOR2_EMAIL);
 
 			exit(EXIT_SUCCESS);
@@ -196,18 +217,20 @@ void parse_cmd_args(int argc, char *argv[])
 			fprintf(stdout, "netToe %s (%s)",
 				PACKAGE_VERSION, RELEASE_DATE);
 #if USE_TERMINFO
-			fprintf(stdout, " with terminfo support");
+			fprintf(stdout, _(" with terminfo support"));
 #elif USE_TERMCAP
-			fprintf(stdout, " with termcap support");
+			fprintf(stdout, _(" with termcap support"));
 #endif
-			fprintf(stdout, ", at TCP port %d.", SERVER_PORT_NUMBER);
+			fprintf(stdout, _(", at TCP port %d."), SERVER_PORT_NUMBER);
 			fprintf(stdout, "\n\n");
-			fprintf(stdout, "Written by Gabriele Giorgetti %s\n",
-					AUTHOR_EMAIL);
-			fprintf(stdout, "Copyright 2000,2001 Gabriele Giorgetti\n");
-			fprintf(stdout, "          2009-2014 Mats Erik Andersson\n");
+			fprintf(stdout, _("Written by Gabriele Giorgetti %s"), AUTHOR_EMAIL);
 			fprintf(stdout, "\n");
-			fprintf(stdout, "This software is released under GNU GPL 2.\n");
+			fprintf(stdout, _("Copyright 2000,2001 Gabriele Giorgetti"));
+			fprintf(stdout, "\n");
+			fprintf(stdout, _("          2009-2014 Mats Erik Andersson"));
+			fprintf(stdout, "\n\n");
+			fprintf(stdout, _("This software is released under GNU GPL 2."));
+			fprintf(stdout, "\n");
 			
 			exit(EXIT_SUCCESS);
 		}
@@ -235,10 +258,10 @@ void parse_cmd_args(int argc, char *argv[])
 			NO_COLORS = 1;
 			continue;
 		} else {
-			fprintf(stdout, "%s: unrecognized option `%s'\n",
-					argv[0], argv[i]);
-			fprintf(stdout, "Try `%s --help' for more information.\n",
-					argv[0]);
+			fprintf(stdout, _("%s: unrecognized option `%s'"), argv[0], argv[i]);
+			fprintf(stdout, "\n");
+			fprintf(stdout, _("Try `%s --help' for more information."), argv[0]);
+			fprintf(stdout, "\n");
 
 			exit (EXIT_SUCCESS);
 		}

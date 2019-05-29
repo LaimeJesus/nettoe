@@ -721,7 +721,7 @@ static void do_one_player_game (void)
 	}
       else
 	{
-    print_between_newline (COMPUTER_CONSIDERS);
+	  print_between_newline (COMPUTER_CONSIDERS);
 	  get_cpu_move (computer_AI);
 	}
 
@@ -731,7 +731,7 @@ static void do_one_player_game (void)
 
       if (who_starts == 1)
 	{
-    print_between_newline (COMPUTER_CONSIDERS);
+	  print_between_newline (COMPUTER_CONSIDERS);
 	  get_cpu_move (computer_AI);
 	}
       else
@@ -1293,8 +1293,8 @@ static void init_server_network_game (void)
     {
       if ( *y_n != 'y' && *y_n != 'Y' )
 	{
-    printf (UNKNOWN_ANSWER);
-    printf ("\n");
+	  printf (UNKNOWN_ANSWER);
+	  printf ("\n");
 	  sleep ( 2 );
 	}
       write_to_socket (sock, "y", 2);
@@ -1312,10 +1312,10 @@ static void init_server_network_game (void)
       if (!has_given_eof
           && (!strncmp (yes_no, "y", 2) || !strncmp (yes_no, "Y", 2)))
 	{
-    printf ("\n");
-    printf (_(" %s wants to play again."), player2_name);
-    printf ("\n");
-    printf (_(" Starting ... "));
+	  printf ("\n");
+	  printf (_(" %s wants to play again."), player2_name);
+	  printf ("\n");
+	  printf (_(" Starting ... "));
 	  fflush (stdout);
 	  sleep ( 4 );
 	  init_server_network_game ();
@@ -1428,15 +1428,15 @@ static void init_client_network_game (void)
 	  write_to_socket (sock, "y", 2);
 	  write_to_socket (sock, "n", 2);
 	  printf (_("Ending session ..."));
-    printf ("\n");
+	  printf ("\n");
 	  close (sock);
 	}
       else
 	{
 	  if ( *y_n != 'y' && *y_n != 'Y' )
 	    {
-        printf (UNKNOWN_ANSWER);
-        printf ("\n");
+	      printf (UNKNOWN_ANSWER);
+	      printf ("\n");
 	      sleep ( 2 );
 	    }
 	  write_to_socket (sock, "y", 2);

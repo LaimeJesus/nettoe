@@ -1313,9 +1313,9 @@ static void init_server_network_game (void)
           && (!strncmp (yes_no, "y", 2) || !strncmp (yes_no, "Y", 2)))
 	{
     printf ("\n");
-	  printf (_(" %s wants to play again."), player2_name);
+    printf (_(" %s wants to play again."), player2_name);
     printf ("\n");
-	  printf (_(" Starting ... "));
+    printf (_(" Starting ... "));
 	  fflush (stdout);
 	  sleep ( 4 );
 	  init_server_network_game ();

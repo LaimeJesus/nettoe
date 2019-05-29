@@ -6,6 +6,10 @@
  cd nettoe-1.5.1
 
  ./configure
+
+ Optionally, if you want to add a translation system run:
+ autoreconf -i
+
  make
  make install
 
@@ -47,6 +51,9 @@
  positioned using
 
      make menudir=/etc/menu  install
+
+ For information on how to add other translations read the TRANSLATIONS.md file included
+ in the source package. 
 
  For information on how to play netToe read the README file included
  in the source package.

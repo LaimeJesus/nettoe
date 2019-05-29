@@ -1,0 +1,623 @@
+# Spanish translations for nettoe package.
+# Copyright (C) 2019 Free Software Foundation, Inc.
+# This file is distributed under the same license as the nettoe package.
+# Jesus Laime <laimejesu@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nettoe 1.5.1\n"
+"Report-Msgid-Bugs-To: meand@users.sourceforge.net\n"
+"POT-Creation-Date: 2019-05-26 17:23-0300\n"
+"PO-Revision-Date: 2019-05-23 23:32-0300\n"
+"Last-Translator: Jesus Laime <laimejesu@gmail.com>\n"
+"Language-Team: Argentinian\n"
+"Language: es_AR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/nettoe.c:160
+msgid " You win !"
+msgstr " Ganaste !"
+
+#: src/nettoe.c:162
+msgid " Computer wins !"
+msgstr " Ganaste !"
+
+#: src/nettoe.c:164
+msgid " This is a draw !"
+msgstr " Empate !"
+
+#: src/nettoe.c:166
+msgid " Computer is considering its move ..."
+msgstr " La CPU está considerando su movimiento ..."
+
+#: src/nettoe.c:168
+#, c-format
+msgid " Waiting for %s to choose whether to play again, or not ..."
+msgstr " Esperando por %s para elegir si jugar de nuevo, o no ..."
+
+#: src/nettoe.c:170
+msgid " Do you want to play again ? [y/n]: "
+msgstr " Quieres jugar de nuevo ? [y/n]: "
+
+#: src/nettoe.c:172
+msgid " Unknown answer. I suppose you want to play again."
+msgstr " Respuesta desconocida. Supongo que quieres jugar de nuevo."
+
+#: src/nettoe.c:193
+#, c-format
+msgid " The Net Tic Tac Toe Game "
+msgstr " El juego de Tateti en Linea "
+
+#: src/nettoe.c:220
+#, c-format
+msgid "Main Menu"
+msgstr "Menú Principal"
+
+#: src/nettoe.c:229 src/nettoe.c:241
+#, c-format
+msgid ") Player vs "
+msgstr ") Jugador vs "
+
+#: src/nettoe.c:231 src/nettoe.c:529
+#, c-format
+msgid "C"
+msgstr "C"
+
+#: src/nettoe.c:233
+#, c-format
+msgid "PU"
+msgstr "PU"
+
+#: src/nettoe.c:243
+#, c-format
+msgid "P"
+msgstr "J"
+
+#: src/nettoe.c:245
+#, c-format
+msgid "layer"
+msgstr "ugador"
+
+#: src/nettoe.c:253
+#, c-format
+msgid ") Two players over "
+msgstr ") Dos jugadores en "
+
+#: src/nettoe.c:255
+#, c-format
+msgid "n"
+msgstr "r"
+
+#: src/nettoe.c:257
+#, c-format
+msgid "etwork"
+msgstr "ed"
+
+#: src/nettoe.c:268
+#, c-format
+msgid "I"
+msgstr "I"
+
+#: src/nettoe.c:270
+#, c-format
+msgid "nfo"
+msgstr "nfo"
+
+#: src/nettoe.c:280
+#, c-format
+msgid "Q"
+msgstr "S"
+
+#: src/nettoe.c:282
+#, c-format
+msgid "uit"
+msgstr "alir"
+
+#: src/nettoe.c:289 src/nettoe.c:554
+#, c-format
+msgid " Choose an action: "
+msgstr " Elige una acción: "
+
+#: src/nettoe.c:364
+#, c-format
+msgid " Error:"
+msgstr " Error:"
+
+#: src/nettoe.c:366
+#, c-format
+msgid " Incorrect choice."
+msgstr " Elección incorrecta."
+
+#: src/nettoe.c:384
+#, c-format
+msgid "Level of difficulty"
+msgstr "Nivel de dificultad"
+
+#: src/nettoe.c:394
+#, c-format
+msgid "W"
+msgstr "D"
+
+#: src/nettoe.c:396
+#, c-format
+msgid "eak "
+msgstr "ébil "
+
+#: src/nettoe.c:405
+#, c-format
+msgid "N"
+msgstr "M"
+
+#: src/nettoe.c:407
+#, c-format
+msgid "ormal"
+msgstr "edio"
+
+#: src/nettoe.c:416
+#, c-format
+msgid "S"
+msgstr "F"
+
+#: src/nettoe.c:418
+#, c-format
+msgid "trong"
+msgstr "uerte"
+
+#: src/nettoe.c:428
+#, c-format
+msgid "R"
+msgstr "V"
+
+#: src/nettoe.c:430
+#, c-format
+msgid "eturn to "
+msgstr "uelve a "
+
+#: src/nettoe.c:432 src/nettoe.c:545
+#, c-format
+msgid "m"
+msgstr "M"
+
+#: src/nettoe.c:434 src/nettoe.c:547
+#, c-format
+msgid "ain menu"
+msgstr "enú principal"
+
+#: src/nettoe.c:441
+#, c-format
+msgid " Choice: "
+msgstr " Elige: "
+
+#: src/nettoe.c:508
+#, c-format
+msgid "Network game options"
+msgstr "Opciones del juego en red"
+
+#: src/nettoe.c:518
+#, c-format
+msgid "H"
+msgstr "H"
+
+#: src/nettoe.c:520
+#, c-format
+msgid "ost the game"
+msgstr "ostea el juego"
+
+#: src/nettoe.c:531
+#, c-format
+msgid "onnect to host"
+msgstr "onectarse con el host"
+
+#: src/nettoe.c:541
+#, c-format
+msgid "B"
+msgstr "V"
+
+#: src/nettoe.c:543
+#, c-format
+msgid "ack to "
+msgstr "uelve a "
+
+#: src/nettoe.c:610
+#, c-format
+msgid " Your opponent has resigned the game by cutting connections !"
+msgstr " Tu oponente a resignado el juego al cortar la conección !"
+
+#: src/nettoe.c:612
+#, c-format
+msgid " (A carrage return continues.   )"
+msgstr "   (Una vuelta de carrage continúa.   )"
+
+#: src/nettoe.c:626 src/nettoe.c:637
+#, c-format
+msgid " Please state your name: "
+msgstr " Por favor escribe tu nombre: "
+
+#: src/nettoe.c:634 src/nettoe.c:671 src/nettoe.c:685
+#, c-format
+msgid " Error: name cannot be more than %d chars long."
+msgstr " Error: el nombre no puede ser más que %d carácteres de largo."
+
+#: src/nettoe.c:643 src/nettoe.c:694
+#, c-format
+msgid " Who will start first ?  "
+msgstr " Quién comienza ?  "
+
+#: src/nettoe.c:647
+#, c-format
+msgid "You will begin ! "
+msgstr " Vas a empezar !"
+
+#: src/nettoe.c:649
+#, c-format
+msgid "Computer will begin ! "
+msgstr "La CPU va a empezar !"
+
+#: src/nettoe.c:664 src/nettoe.c:674
+#, c-format
+msgid " Player 1, please type your name: "
+msgstr " Jugador 1, por favor tipea tu nombre: "
+
+#: src/nettoe.c:678 src/nettoe.c:688
+#, c-format
+msgid " Player 2, please type your name: "
+msgstr " Jugador 2, por favor tipea tu nombre: "
+
+#: src/nettoe.c:700
+#, c-format
+msgid " will begin ! "
+msgstr " va a comenzar !"
+
+#: src/nettoe.c:846 src/nettoe.c:1268 src/nettoe.c:1386
+#, c-format
+msgid " wins !"
+msgstr " gana !"
+
+#: src/nettoe.c:893
+#, c-format
+msgid "        Current game"
+msgstr "        Juego actual"
+
+#: src/nettoe.c:897
+#, c-format
+msgid "Coordinate matrix"
+msgstr "Matriz de coordenadas"
+
+#: src/nettoe.c:913
+#, c-format
+msgid "  Score:"
+msgstr "  Puntuación:"
+
+#: src/nettoe.c:919
+msgid "Computer"
+msgstr "Computadora"
+
+#: src/nettoe.c:936
+#, c-format
+msgid " Waiting for "
+msgstr " Esperando por "
+
+#: src/nettoe.c:940
+#, c-format
+msgid " to move ... "
+msgstr " por mover ... "
+
+#: src/nettoe.c:953
+#, c-format
+msgid ", playing %c, it is your turn: "
+msgstr ", jugando %c, es tu turno: "
+
+#: src/nettoe.c:964
+#, c-format
+msgid " Invalid move. Try again: "
+msgstr " Movimiento inválido. Inténtalo de nuevo: "
+
+#: src/nettoe.c:988 src/misc.c:139
+#, c-format
+msgid "Host the game"
+msgstr "Hostear el juego"
+
+#: src/nettoe.c:992 src/nettoe.c:1094
+#, c-format
+msgid "    Player name: "
+msgstr "    Nombre del jugador: "
+
+#: src/nettoe.c:999
+msgid "   You should now tell your IP address to any interested"
+msgstr "   Ahora deberías contarle tu dirección IP a algún"
+
+#: src/nettoe.c:1000
+#, c-format
+msgid "   competitor. There might be more than one address, but"
+msgstr "   competidor interesado. Quizás halla más de una dirección, pero"
+
+#: src/nettoe.c:1002
+#, c-format
+msgid "   \"%s\" should do."
+msgstr "   \"%s\" debería funcionar."
+
+#: src/nettoe.c:1004
+msgid "   Connected players:"
+msgstr "   Jugadores conectados:"
+
+#: src/nettoe.c:1012 src/nettoe.c:1141
+#, c-format
+msgid "you"
+msgstr "vos"
+
+#: src/nettoe.c:1021 src/nettoe.c:1111
+#, c-format
+msgid "   (A carrage return continues.   )"
+msgstr "   (Un vuelta de carrage continúa.   )"
+
+#: src/nettoe.c:1040 src/nettoe.c:1131
+#, c-format
+msgid "your opponent"
+msgstr "tu oponente"
+
+#: src/nettoe.c:1044 src/nettoe.c:1147
+msgid "   Two players are present. Let us play !"
+msgstr "   Hay dos jugadores activos. Vamos a jugar !"
+
+#: src/nettoe.c:1048 src/nettoe.c:1151
+#, c-format
+msgid "   Who will start first ?  "
+msgstr "   Quién comienza ?  "
+
+#: src/nettoe.c:1066 src/nettoe.c:1163
+#, c-format
+msgid " will begin !"
+msgstr " va a comenzar !"
+
+#: src/nettoe.c:1068 src/nettoe.c:1165
+#, c-format
+msgid "   Starting game ... "
+msgstr "   Juego comenzando ... "
+
+#: src/nettoe.c:1091
+#, c-format
+msgid "Connect to host"
+msgstr "Conectarse con el host"
+
+#: src/nettoe.c:1099
+#, c-format
+msgid "    Host to connect to (IP or hostname): "
+msgstr "    Conectarse al host por (IP o nombre de host): "
+
+#: src/nettoe.c:1105
+#, c-format
+msgid "   Connecting ... "
+msgstr "   Conectando ... "
+
+#: src/nettoe.c:1118
+#, c-format
+msgid "connected !"
+msgstr "conectado !"
+
+#: src/nettoe.c:1121
+#, c-format
+msgid "   The players are:"
+msgstr "   Los jugadores son:"
+
+#: src/nettoe.c:1316
+#, c-format
+msgid " %s wants to play again."
+msgstr " %s quiere jugar de nuevo."
+
+#: src/nettoe.c:1318 src/nettoe.c:1444
+#, c-format
+msgid " Starting ... "
+msgstr " Comenzando ... "
+
+#: src/nettoe.c:1417
+#, c-format
+msgid " %s wants to play again. What about you ?"
+msgstr " %s quiere jugar de nuevo. Quieres jugar ?"
+
+#: src/nettoe.c:1430
+#, c-format
+msgid "Ending session ..."
+msgstr "Cerrando sesión ..."
+
+#: src/nettoe.c:1453
+#, c-format
+msgid " %s doesn't want to play again. Sorry."
+msgstr " %s no quiere jugar de nuevo. Perdón."
+
+#: src/nettoe.c:1492
+#, c-format
+msgid " Goodbye !"
+msgstr " Adiós !"
+
+#: src/nettoe.c:1495
+#, c-format
+msgid "netToe Copyright 2000,2001 Gabriele Giorgetti"
+msgstr "netToe Copyright 2000,2001 Gabriele Giorgetti"
+
+#: src/nettoe.c:1496
+#, c-format
+msgid "       Copyright 2009-2014 Mats Erik Andersson"
+msgstr "       Copyright 2009-2014 Mats Erik Andersson"
+
+#: src/nettoe.c:1498
+#, c-format
+msgid "netToe project homepage: %s"
+msgstr "Página principal del projecto netToe: %s"
+
+#: src/misc.c:126
+#, c-format
+msgid " netToe is a Tic Tac Toe-like game for Linux and UNIX.    "
+msgstr " netToe es una versión del juego Tic Tac para Linux y UNIX.    "
+
+#: src/misc.c:128
+#, c-format
+msgid " It is possible to play it against the computer, another  "
+msgstr " Es posible jugarlo contra la computadora, contra otro  "
+
+#: src/misc.c:130
+#, c-format
+msgid " player on the same PC, or against another player over    "
+msgstr " jugador en la misma PC, o contra otro jugador en    "
+
+#: src/misc.c:132
+#, c-format
+msgid " a network (Internet, and everything using TCP/IP).       "
+msgstr " red (Internet y cualquier cosa que use TCP/IP).       "
+
+#: src/misc.c:134
+#, c-format
+msgid " To play it over a network you must first set up a server."
+msgstr " Para jugarlo en red primero debes iniciar un servidor."
+
+#: src/misc.c:136
+#, c-format
+msgid " This is done in the network game options menu, selecting "
+msgstr " Esto se hace en la opción de juego en linea del menú, seleccionando "
+
+#: src/misc.c:141
+#, c-format
+msgid " Then the (remote) second player must  "
+msgstr " Entonces el segundo jugador (remoto) debe  "
+
+#: src/misc.c:143
+#, c-format
+msgid " connect to the server by typing its IP address, or name. "
+msgstr " conectarse al servidor tipeando su dirección IP, o nombre. "
+
+#: src/misc.c:145
+#, c-format
+msgid " That should be enough for you to have some leisure.      "
+msgstr " Eso debería ser suficiente para tener un rato de ocio.      "
+
+#: src/misc.c:147
+#, c-format
+msgid " For a detailed guide on HOW TO PLAY, and for other info, "
+msgstr " Para una guía detallada de COMO JUGAR, y cualquier otra información, "
+
+#: src/misc.c:149
+#, c-format
+msgid " do read the manual page "
+msgstr " lee la página del manual "
+
+#: src/misc.c:156
+#, c-format
+msgid " Copyright 2000,2001 Gabriele Giorgetti"
+msgstr " Copyright 2000,2001 Gabriele Giorgetti"
+
+#: src/misc.c:158
+#, c-format
+msgid "           2009-2014 Mats Erik Andersson"
+msgstr "           2009-2014 Mats Erik Andersson"
+
+#: src/misc.c:162
+#, c-format
+msgid " Press"
+msgstr " Presiona"
+
+#: src/misc.c:164
+#, c-format
+msgid " enter"
+msgstr " enter"
+
+#: src/misc.c:166
+#, c-format
+msgid " to go back to the main menu. "
+msgstr " para volver al menú principal. "
+
+#: src/misc.c:188
+#, c-format
+msgid "netToe %s the enhanced, and networked, Tic Tac Toe game."
+msgstr "netToe %s el Tic Tac mejorado, y en linea."
+
+#: src/misc.c:190
+#, c-format
+msgid "Usage:  nettoe [OPTIONS]"
+msgstr "Uso: nettoe [OPCIONES]"
+
+#: src/misc.c:192
+#, c-format
+msgid "-4,  --ipv4        only IPv4 networking"
+msgstr "-4,  --ipv4        sólo conexión IPv4"
+
+#: src/misc.c:194
+#, c-format
+msgid "-6,  --ipv6        only IPv6 networking"
+msgstr "-6,  --ipv6        sólo conexión IPv6"
+
+#: src/misc.c:196
+#, c-format
+msgid "-nb, --no-beep     disable beeps"
+msgstr "-nb, --no-beep     deshabilita beeps"
+
+#: src/misc.c:198
+#, c-format
+msgid "-nc, --no-colors   disable colors"
+msgstr "-nc, --no-colors   deshabilita colores"
+
+#: src/misc.c:200
+#, c-format
+msgid "-h,  --help        display this help, then exit"
+msgstr "-h,  --help        muestra esta ayuda, y sale"
+
+#: src/misc.c:202
+#, c-format
+msgid "-v,  --version     output version information, then exit"
+msgstr "-v,  --version     muestra información de la versión, y sale"
+
+#: src/misc.c:204
+#, c-format
+msgid "The netToe project can be found at: "
+msgstr "El proyecto netToe puede ser encontrado en: "
+
+#: src/misc.c:208
+#, c-format
+msgid "Please send any bug reports, or comments to:"
+msgstr "Por favor envía cualquier reporte de bug, o comentarios a:"
+
+#: src/misc.c:220
+#, c-format
+msgid " with terminfo support"
+msgstr " con soporte a terminfo"
+
+#: src/misc.c:222
+#, c-format
+msgid " with termcap support"
+msgstr " con soporte a termcap"
+
+#: src/misc.c:224
+#, c-format
+msgid ", at TCP port %d."
+msgstr ", al puerto TCP %d."
+
+#: src/misc.c:226
+#, c-format
+msgid "Written by Gabriele Giorgetti %s"
+msgstr "Escrito por Gabriele Giorgetti %s"
+
+#: src/misc.c:228
+#, c-format
+msgid "Copyright 2000,2001 Gabriele Giorgetti"
+msgstr "Copyright 2000,2001 Gabriele Giorgetti"
+
+#: src/misc.c:230
+#, c-format
+msgid "          2009-2014 Mats Erik Andersson"
+msgstr "          2009-2014 Mats Erik Andersson"
+
+#: src/misc.c:232
+#, c-format
+msgid "This software is released under GNU GPL 2."
+msgstr "Este software fue publicado bajo la licencia GNU GPL 2."
+
+#: src/misc.c:261
+#, c-format
+msgid "%s: unrecognized option `%s'"
+msgstr "%s: `%s' es una opción no reconocida"
+
+#: src/misc.c:263
+#, c-format
+msgid "Try `%s --help' for more information."
+msgstr "Intenta `%s --help' para más información."

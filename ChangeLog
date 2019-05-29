@@ -1,5 +1,9 @@
 -- $Id: ChangeLog for netToe version 1.5.1 --
 ---------------------------------------------
+29 May 2019:
+  - Add support for dynamically adding translations. 
+  - Also adds the first translation(es_AR) using this system.
+  - Add how to add translations document.
 21 March 2014:
   - Export NETTOE_LDADD to subdirectories.
     It contains linking needed for terminfo/curses.

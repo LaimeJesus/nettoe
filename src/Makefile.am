@@ -17,3 +17,5 @@ nettoe_SOURCES  = 			\
 		network.c network.h
 
 nettoe_LDADD = $(NETTOE_LDADD)
+
+AM_CPPFLAGS = -DLOCALEDIR=\""$(localedir)"\"

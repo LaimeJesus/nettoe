@@ -4,7 +4,7 @@
 
 * Clone the repository:
 
-`git clone https://github.com/LaimeJesus/nettoe`
+`git clone https://github.com/RobertBerger/nettoe.git`
 
 * In the terminal run:
 
